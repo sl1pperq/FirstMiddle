@@ -1,5 +1,5 @@
 #include <iostream>
-#include "middle.h"
+#include "cpp_files/middle.h"
 using namespace std;
 
 int main() {

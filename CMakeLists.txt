@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(FirstMiddle main.cpp
         cpp_files/1_itc_num_print.cpp
-        middle.h
+        cpp_files/middle.h
         cpp_files/2_itc_len_num.cpp
         cpp_files/3_itc_len_num.cpp
         cpp_files/4_itc_multi_num.cpp
