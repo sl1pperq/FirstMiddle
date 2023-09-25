@@ -1,8 +1,8 @@
 #include <iostream>
-#include "cpp_files/middle.h"
+#include "middle.h"
 using namespace std;
 
 int main() {
-    cout << itc_rev_bin_num(-10101010101);
+    cout << itc_null_count(123);
     return 0;
 }

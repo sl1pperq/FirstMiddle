@@ -17,5 +17,8 @@ int itc_second_simple_max_num(long long number) {
     if (second_max_digit == -1 || max_digit == second_max_digit) {
         return -1;
     }
+    if (second_max_digit < 0) {
+        second_max_digit *= -1;
+    }
     return second_max_digit;
 }

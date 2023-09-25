@@ -14,5 +14,8 @@ int itc_second_max_num(long long number) {
         }
         number /= 10;
     }
+    if (second_max_digit < 0) {
+        second_max_digit *= -1;
+    }
     return second_max_digit;
 }
