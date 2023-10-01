@@ -1,16 +1,18 @@
-#include <climits>
-
 int itc_min_num(long long number) {
-    if (number < 0) {
+    int mini = 9;
+    if (number < 0){
         number *= -1;
     }
-    int min_digit = INT_MAX;
-    while (number > 0) {
-        int digit = number % 10;
-        if (digit < min_digit) {
-            min_digit = digit;
-        }
+    if (number == 0){
+        return 0;
+    }
+
+    int a;
+    while (number > 0){
+        a = number % 10;
+        if (a < mini)
+            mini = a;
         number /= 10;
     }
-    return min_digit;
+    return mini;
 }

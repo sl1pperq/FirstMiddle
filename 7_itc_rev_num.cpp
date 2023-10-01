@@ -1,16 +1,20 @@
 int itc_rev_num(long long number) {
-    int rev = 0;
+    long long a = 0;
+    if (number == 0) {
+        return 1;
+    }
     if (number < 0) {
         number *= -1;
     }
+
+    int count = 0;
     while (number != 0) {
-        rev = rev * 10 + number % 10;
+        a = a * 10 + number % 10;
         number /= 10;
     }
-    int len = 0;
-    while (rev != 0) {
-        len++;
-        rev /= 10;
+    while(a != 0){
+        count++;
+        a /= 10;
     }
-    return len;
+    return count;
 }
